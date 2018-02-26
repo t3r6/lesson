@@ -14,4 +14,12 @@ public class Aspirant extends Student {
         super(firtsName, lastName, group, avrMark);
         this.scienceWork = scienceWork;
     }
+
+    public int getScholarship() {
+        if (getAvrMark() == 5) {
+            return 200;
+        } else {
+            return 180;
+        }
+    }
 }

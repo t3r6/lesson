@@ -42,4 +42,12 @@ public class Student {
     public void setAvrMark(double avrMark) {
         this.avrMark = avrMark;
     }
+
+    public int getScholarship() {
+        if (avrMark == 5) {
+            return 100;
+        } else {
+            return 80;
+        }
+    }
 }
