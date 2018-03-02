@@ -17,4 +17,25 @@ public abstract  class Shape {
 
     public abstract void draw();
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Shape shape = (Shape) o;
+
+        return color.equals(shape.color);
+    }
+
+    @Override
+    public int hashCode() {
+        return color.hashCode();
+    }
+
+    @Override
+    public String toString() {
+        return "Shape{" +
+                "color='" + color + '\'' +
+                '}';
+    }
 }
