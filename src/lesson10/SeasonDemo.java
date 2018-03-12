@@ -35,10 +35,8 @@ public class SeasonDemo {
     public static void print() {
         Season[] values = Season.values();
         for (Season season : values) {
-            System.out.println(season);
+            System.out.println(season + " " + season.getTemperature() + " " + season.getDescription());
         }
     }
-
-
 }
 
