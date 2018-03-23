@@ -4,9 +4,6 @@ import java.io.UnsupportedEncodingException;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
-/**
- * Created by Tatyana on 01.08.2017.
- */
 public class ResourceBundleDemo {
     public static void main(String[] args) throws UnsupportedEncodingException {
         printInfo("", "");
